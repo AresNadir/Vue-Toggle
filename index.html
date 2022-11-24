@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next" defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Toggle Div</title>
+</head>
+<body>
+  <div class="toggle-div">
+    <section id="toggleDiv">
+      <div class="toggle_container" @click="spanSelected">
+        <span class="title" >
+          <span>
+            Nikopol's Poem
+          </span>
+          <em>{{expandIcon}}</em>
+        </span>
+        <span 
+        class="content"
+        :class="{close: spanASelected}"
+        >
+          <div class="toggle-span_content">
+            <p>
+            Remember the sight we saw, my soul,
+            that beautiful soft summer morning
+            round a turning in the path, a disgusting
+            carcass on a bed scattered with stones,
+            its legs in the air like a woman in heat,
+            like a fountain with its rhythmical sobs.
+            I can hear it clearly flowing with a long,
+            murmuring sound, but I touch my body in vain to find the wound.
+            I am the vampire of my own heart,
+            one of the great outcasts condemned
+            to eternal laughter who can no longer smile.
+
+            <br>
+            Am I dead? I must be dead.
+            </p>
+          </div>
+        </span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
